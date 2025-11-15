@@ -1,4 +1,4 @@
-// src/components/SidebarComponent.vue (COMPLETO Y CORREGIDO)
+// src/components/SidebarComponent.vue
 <template>
     <div :class="['sidebar', { 'sidebar-collapsed': isToggled }]">
         
@@ -32,7 +32,6 @@ export default {
             menuItems: [
                 { name: 'Pagina Principal', path: '/dashboard', icon: 'bi-speedometer' },
                 { name: 'Productos', path: '/dashboard/productos', icon: 'bi-box-seam' },
-                // 🚨 CORRECCIÓN FINAL: Usa la URL anidada exacta
                 { name: 'Acerca de Nosotros', path: '/dashboard/acerca-de', icon: 'bi-info-circle' },
                 { name: 'Contacto', path: '/dashboard/contacto', icon: 'bi-headset' }
             ]
